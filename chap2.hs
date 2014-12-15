@@ -1,14 +1,8 @@
--- This is a comment
---rm_up :: [Char] -> [Char]
-rmUp :: String -> String
-rmUp st = [ c | c <- st, elem c ['A'..'Z'] ]
+doubleMe x = x + x
+doubleUs x y = doubleMe x + doubleMe y
 
-addThree :: Int -> Int -> Int -> Int
-addThree x y z = x + y + z
+doubleSmallNumber x = if x > 100 then x else 2*x
+doubleSmallNumber' x = (if x > 100 then x else 2*x) + 1
 
-factorial :: Integer -> Integer
-factorial n = product [1..n]
-
-circumference :: Float -> Float
-circumference r = 2 * pi * r
-
+boomBangs xs = [if x < 10 then "boom" else "bang" | x <- xs, odd x]
+length' xs = sum [1 | _ <- xs]

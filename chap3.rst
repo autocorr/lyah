@@ -1,18 +1,28 @@
-Pattern Matching
-----------------
-Functions can match the arguements to implementation of a function.  It can
-also be similar to argument unpacking in python where arguments can be matched
-from tuples or lists.
+Types
+-----
+- `:t` : check type of expr, if used on a function can tell params and out return
+- `::` : type assertion
+- `Int` : machine int
+- `Integer` : infinite precision int
+- `Float` : single precision
+- `Double` :
+- `Bool` :
+- `Char` :
+- `String` : equiv to [Char]
 
-An *as pattern* can bind a variable name to a collection of other variables,
-such as ``all@(x:xs)``, ``all`` becomes a variable for the entire list, and
-``x`` for the head, and ``xs`` for the tail.
+Typeclasses
+-----------
+- `=>` : class constraints
+- `Eq` : equality
+- `Ord` :
+- `Read` :
+- `Enum` :
+- `Bounded` :
+- `Num` :
+- `Integral` :
+- `Floating` :
 
-*Guards* test the truth value of a series of expressions. They can be helpful
-for case-statements or as a input validation.
-
-`where` is a syntactic structure but `let...in` is an expression, and can be
-used anywhere an expresion can.
-
-Case statements can be handled with pattern matching or with the `case...of`
-syntax. Nice alternative because you don't have to repeat the function name.
+Commands
+--------
+- `show` : represent as string
+- `read` : eval string
